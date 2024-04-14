@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+
+  taskmanager_service:
+    restart: on-failure
+    container_name: taskmanager_service
+    build: taskmanager_service/
+    ports:
+      - "8000:80"
+
+  randomquote_service:
+    restart: on-failure
+    container_name: randomquote_service
+    build: randomquote_service/
+    ports:
+      - "8001:80"
