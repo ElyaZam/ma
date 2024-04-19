@@ -2,6 +2,7 @@ version: '3.9'
 
 services:
 
+
   taskmanager_service:
     restart: on-failure
     container_name: taskmanager_service
